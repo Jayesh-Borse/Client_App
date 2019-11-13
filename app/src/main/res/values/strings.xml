@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ClientApp</string>
+    <string name="todo">TODO</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="login">LOGIN</string>
+    <string name="Username">Username</string>
+    <string name="password">Password</string>
+
+    <string name="login_preference">com.jayesh.clientapp_login_preference</string>
+    <string name="login_status_preference">com.jayesh.clientapp_login_status_preference</string>
+
+
+</resources>

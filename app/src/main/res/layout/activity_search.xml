@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity"
+    android:background="@drawable/wel">
+
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:hint="Name"
+        android:textColor="@color/colorPrimaryDark"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbutton"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:onClick="find"
+        android:layout_toRightOf="@id/editText4"
+        android:text="Search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="410dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="44dp"
+        android:background="#01B2FC"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/view2"
+        android:layout_width="412dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="686dp"
+        android:background="#01B2FC" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        style="@style/scrollbar_shape_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="150dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.595"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.044" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="Edit"
+        android:textSize="18dp"
+        android:layout_marginTop="605dp"
+        android:layout_marginLeft="40dp"
+        android:onClick="edit"
+        android:background="@drawable/roundbutton" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="605dp"
+        android:layout_marginLeft="210dp"
+        android:textSize="18dp"
+        android:onClick="del"
+        android:background="@drawable/roundbutton"
+        android:text="Delete"/>
+</RelativeLayout>

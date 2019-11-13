@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Info"
+    android:background="@drawable/wel">
+    <Button
+        android:id="@+id/view"
+        android:layout_width="410dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/gradient"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/view2"
+        android:layout_width="412dp"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="686dp"
+        android:background="@drawable/gradient" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        style="@style/scrollbar_shape_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="290dp"
+                android:layout_height="70dp"
+                android:typeface="serif"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="25dp"
+                android:gravity="center"
+                android:text="CLIENT DETAILS"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.595"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.044" />
+
+            <EditText
+                android:id="@+id/serial"
+                android:windowSoftInputMode="stateHidden"
+                android:layout_width="wrap_content"
+                android:layout_height="51dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="Serial Number"
+                android:inputType="numberSigned"
+                android:textColor="@color/cardview_dark_background"
+                android:textColorHint="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.254" />
+
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="324dp"
+
+                android:layout_height="51dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="First Name"
+                android:inputType="textCapWords"
+                android:textColor="@color/cardview_dark_background"
+                android:textColorHint="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.254" />
+
+
+            <EditText
+                android:id="@+id/fhname"
+                android:layout_width="324dp"
+                android:layout_height="51dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="Father/Husband Name"
+                android:inputType="textCapWords"
+                android:textColor="@color/cardview_dark_background"
+                android:textColorHint="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.357" />
+
+            <EditText
+                android:id="@+id/lastname"
+                android:layout_width="324dp"
+                android:layout_height="51dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="Last Name"
+                android:inputType="textCapWords"
+                android:textColor="@color/cardview_dark_background"
+                android:textColorHint="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.254" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="324dp"
+                android:layout_height="51dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="Date of Birth"
+                android:inputType="date"
+                android:textColor="@color/cardview_dark_background"
+                android:textColorHint="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.565"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.467" />
+
+            <EditText
+                android:id="@+id/mname"
+                android:layout_width="324dp"
+                android:layout_height="51dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="Mothers Name"
+                android:inputType="textCapWords"
+                android:textColor="@color/cardview_dark_background"
+                android:textColorHint="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.565"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.467" />
+
+            <EditText
+                android:id="@+id/contact"
+                android:layout_width="324dp"
+                android:layout_height="51dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="Contact No."
+                android:inputType="numberSigned"
+                android:textColor="@color/cardview_dark_background"
+                android:textColorHint="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.625"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.67" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="324dp"
+                android:layout_height="51dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/cardview_dark_background"
+                android:textColorHint="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.625"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.772" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="324dp"
+                android:layout_height="51dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="textCapWords"
+                android:textColor="@color/cardview_dark_background"
+                android:textColorHint="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.625"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.772" />
+
+            <EditText
+                android:id="@+id/SendMail"
+                android:layout_width="324dp"
+                android:layout_height="51dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="Mail To"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/cardview_dark_background"
+                android:textColorHint="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.625"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.772" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/saveb"
+                android:layout_width="155dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/roundbutton"
+                android:onClick="save"
+                android:text="SAVE"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.593"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.976" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="151dp"
+                android:layout_height="61dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundbutton"
+                android:onClick="SendMail"
+                android:text="Send Mail" />
+
+
+
+
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
